@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <span>Welcome, alfaremiro</span>
+                <span class="cart-info">Cart: <span id="cart-count">5</span></span>
+            </div>
+        </header>
+        <main>
+            <section class="stats">
+                <div class="card">
+                    <h2>Sales</h2>
+                    <p id="total-sales">$897,741</p>
+                </div>
+                <div class="card">
+                    <h2>Online Visitors</h2>
+                    <p>20</p>
+                </div>
+                <div class="card">
+                    <h2>Active Shopping Carts</h2>
+                    <p>2</p>
+                </div>
+            </section>
+            <section class="chart-container">
+                <canvas id="salesChart"></canvas>
+            </section>
+            <section class="cart-details">
+                <h2>Cart Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items will be populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
